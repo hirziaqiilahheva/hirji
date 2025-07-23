@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmad Ayedi | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Navbar -->
+  <header class="fixed w-full bg-gray-800 bg-opacity-80 shadow-lg z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!--<a href="CV_ahmed ayadi.pdf" class="text-2xl font-bold hover:text-indigo-400">My Resume</a>-->
+      <a href="CV_Ahmed_AYADI.pdf" class="text-2xl font-bold hover:text-indigo-400" target="_blank"
+        rel="noopener noreferrer">Download My Resume</a>
+
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#about" class="hover:text-indigo-400">About</a></li>
+        <li><a href="#skills" class="hover:text-indigo-400">Skills</a></li>
+        <li>
+          <a href="#projects" class="hover:text-indigo-400">Projects</a>
+        </li>
+        <li><a href="#contact" class="hover:text-indigo-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-gray-800 to-gray-900"
+    id="home">
+    <!-- Picture Section -->
+    <section class="flex justify-center pt-24 pb-10 bg-gray-900">
+      <!-- Adjusted padding-top for spacing -->
+      <img src="me.jpg" alt="Ahmad Ayedi"
+        class="rounded-lg shadow-lg w-80 md:w-96 lg:w-[450px] object-cover border-4 border-indigo-400" />
+    </section>
+    <h1 class="text-5xl md:text-7xl font-extrabold mb-4">
+      Hi, I'm <span class="text-indigo-400">AHMAD AYEDI</span>
+    </h1>
+    <p class="text-3xl md:text-4xl mb-8">
+      Embedded Systems Engineer
+    </p>
+    <a href="#projects" class="bg-indigo-500 text-white px-6 py-3 rounded-full hover:bg-indigo-400 transition">View My
+      Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-20 bg-gray-900" id="about">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-semibold mb-4">About Me</h2>
+      <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+        Math, Electromagnetism, Electricity, and Embedded Systems —that’s my
+        territory.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-20 bg-gray-800" id="skills">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-semibold mb-8">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Skills Items -->
+        <div class="bg-gray-700 p-6 rounded-lg">
+          <h3 class="text-2xl font-semibold mb-2">Software Development</h3>
+          <p class="text-gray-400">
+            Python, JavaScript (ES6+), Node.js, Express, REST APIs, WebSocket, Angular, Docker, Flask, Prometheus,
+            Grafana, InfluxDB, MongoDB, MySQL
+          </p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-lg">
+          <h3 class="text-2xl font-semibold mb-2">Embedded Systems</h3>
+          <p class="text-gray-400">
+            C/C++, Assembly, STM32, ESP32, AVR, PIC, ARM Cortex, Bare-Metal programming, USART, SPI, I2C, CAN, LIN,
+            MQTT, RaspberryPi, Linux(Debian)
+          </p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-lg">
+          <h3 class="text-2xl font-semibold mb-2">Electrical Engineering</h3>
+          <p class="text-gray-400">
+            Electrical Machines, Electromagnetic Principles, Power semi-conductors, Control Systems, Industrial
+            Automation,Renewable Energy Systems
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-20 bg-gray-900" id="projects">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-semibold mb-8">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Items -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-2">
+            Industry 4.0 Lab Web Shop
+          </h3>
+          <p class="text-gray-400 mb-4">
+            E-commerce website allowing clients to place orders and track
+            manufacturing progress in real-time.
+          </p>
+          <p class="text-xl font-bold text-indigo-400 mb-4 flex items-center">
+            <span class="mr-2">🛠️</span> Tools:
+          </p>
+          <p class="text-gray-400 mb-4">HTML/CSS/JS(ES6+)/PHP/Xampp/MySQL</p>
+          <br />
+          <a href="https://github.com/AhmadAyedi/Industry-4.0-LabShop-2nd-Intenrship"
+            class="text-indigo-400 hover:underline" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+        <!-- More project items as needed -->
+        <!-- Project 2 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-2">Smart House</h3>
+          <p class="text-gray-400 mb-4">
+            Developing an IOT webserver to control devices and monitor
+            Temperature remotly
+          </p>
+          <br />
+          <p class="text-xl font-bold text-indigo-400 mb-4 flex items-center">
+            <span class="mr-2">🛠️</span> Tools:
+          </p>
+          <p class="text-gray-400 mb-4">
+            ESP32/Embedded C/HTML/CSS/JS(ES6+)/Firebase
+          </p>
+          <br />
+          <a href="https://github.com/AhmadAyedi/PFA_2eme-esp32-webserver-Firebase-embedded-C-"
+            class="text-indigo-400 hover:underline" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+        <!-- Add more projects as needed -->
+        <!-- Project 3 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-2">
+            MERN-Stack(level 3-4-5-6)
+          </h3>
+          <p class="text-gray-400 mb-4">
+            Creating BookStore, ChatApp, Recipe Blog, and TaskManagmentSystem
+            with user Authentificaion and task Tracking
+          </p>
+          <p class="text-xl font-bold text-indigo-400 mb-4 flex items-center">
+            <span class="mr-2">🛠️</span> Tools:
+          </p>
+          <p class="text-gray-400 mb-4">Node.js/Express/MongoDB/JS(ES6+)s</p>
+          <br />
+          <a href="https://github.com/AhmadAyedi/MERN_Stack-level-3-4-5-6" class="text-indigo-400 hover:underline"
+            target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-2">
+            Photovoltaic Monitoring System
+          </h3>
+          <p class="text-gray-400 mb-4">
+            I used esp32 to Build a monitoring Temperature System for a
+            Photovoltaic system
+          </p>
+          <br />
+          <br />
+          <p class="text-xl font-bold text-indigo-400 mb-4 flex items-center">
+            <span class="mr-2">🛠️</span> Tools:
+          </p>
+          <p class="text-gray-400 mb-4">
+            ESP32/Embedded C/Node.js/Express/MongoDB/JS(ES6+)
+          </p>
+          <a href="https://github.com/AhmadAyedi/PFS_PV-Monitoring-System-Express-MongoDB-ESP32-embedded-C-"
+            class="text-indigo-400 hover:underline" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-2">TaskManagementSystem</h3>
+          <p class="text-gray-400 mb-4">
+            it's a TaskManagementSystem with user Authentification where you
+            can add update delete and read tasks in a secure application where
+            all your data is saved in a file.txt and doesn't get lost
+          </p>
+          <p class="text-xl font-bold text-indigo-400 mb-4 flex items-center">
+            <span class="mr-2">🛠️</span> Tools:
+          </p>
+          <p class="text-gray-400 mb-4">Python(Tkinter)</p>
+          <br />
+          <a href="https://github.com/AhmadAyedi/MiniProject-Python-Tkinter-TaskManagementSystem"
+            class="text-indigo-400 hover:underline" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-2">SchoolManagmentSystem</h3>
+          <p class="text-gray-400 mb-4">
+            I build a SchoolManagmentSyst using OOP with C++ where we can
+            manage all the students and teachers information and the Admin can
+            read add delete or modify the data of each student or teacher
+          </p>
+          <p class="text-xl font-bold text-indigo-400 mb-4 flex items-center">
+            <span class="mr-2">🛠️</span> Tools:
+          </p>
+          <p class="text-gray-400 mb-4">C++(OOP)</p>
+          <br />
+          <a href="https://github.com/AhmadAyedi/SchoolManagmentSyst-C--OOP" class="text-indigo-400 hover:underline"
+            target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-20 bg-gray-800" id="contact">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-semibold mb-4">Get in Touch</h2>
+      <p class="text-gray-400 mb-8">
+        Feel free to reach out if you'd like to collaborate or just say hello!
+      </p>
+      <p class="text-2xl text-indigo-400 font-semibold mb-8 underline hover:text-indigo-300 transition duration-300">
+        Email: ayadi.ahmed@enis.com
+      </p>
+
+      <div class="flex justify-center mt-6 space-x-4">
+        <a href="https://github.com/AhmadAyedi"
+          class="bg-indigo-500 text-white px-6 py-3 rounded-full hover:bg-indigo-400 transition" target="_blank"
+          rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/ahmad-ayedi/"
+          class="bg-indigo-500 text-white px-6 py-3 rounded-full hover:bg-indigo-400 transition" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://ahmadayedi.github.io/"
+          class="bg-indigo-500 text-white px-6 py-3 rounded-full hover:bg-indigo-400 transition" target="_blank"
+          rel="noopener noreferrer">Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-700 text-center text-gray-400">
+    <p>&copy; 2024 AYEDI AHMAD. Electrical Engineering at ENIS.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
